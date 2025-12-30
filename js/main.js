@@ -34,11 +34,10 @@ themeToggle.addEventListener("click", () => {
 const modal = document.getElementById("image-modal");
 const trigger = document.getElementById("profile-img-trigger");
 const modalImg = document.getElementById("img-expanded");
-const closeBtn = document.querySelector(".close-modal");
 
 trigger.addEventListener("click", () => {
   const profileImg = trigger.querySelector("img");
-  modal.style.display = "block";
+  modal.style.display = "flex";
   modalImg.src = profileImg.src;
 });
 
@@ -46,7 +45,6 @@ const closeModal = () => {
   modal.style.display = "none";
 };
 
-closeBtn.addEventListener("click", closeModal);
 window.addEventListener("click", (e) => {
   if (e.target === modal) closeModal();
 });
