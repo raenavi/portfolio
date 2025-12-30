@@ -432,17 +432,23 @@ p {
   h1 {
     font-size: 2.5rem;
     letter-spacing: -1.5px;
+    text-align: center;
   }
   .hero {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    text-align: left; /* Keep text left aligned but image/header column */
+    text-align: center;
   }
   .hero-image {
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+  .hero-tagline {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
   .exp-header,
   .edu-header {
